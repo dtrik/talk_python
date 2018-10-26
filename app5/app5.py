@@ -4,6 +4,10 @@ import collections
 
 WeatherReport = collections.namedtuple('Report', 'cond, temp, scale, loc')
 def main():
+    """
+    Application to output the weather at the location provided by US zipcode
+    """
+    #TODO: update the app to get weather of any location
     print_header()
     zipcode = input("Please provide the zipcode you want weather at (eg: 47904): ")
     response = get_html_from_location(zipcode)
